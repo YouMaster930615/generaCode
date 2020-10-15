@@ -107,7 +107,7 @@ export default {
     },
     testName () {
       this.$store.dispatch('changeName')
-      preserImg('守口如瓶余地龙')
+      preserImg('守口如瓶余地龙！！')
     }
   }
 }
