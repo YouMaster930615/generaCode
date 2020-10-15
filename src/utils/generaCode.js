@@ -96,4 +96,14 @@ const generaCode = (params = {}) => {
   handleDrawImg(ctx, storeImg[startIndexImg])
 }
 
-export default generaCode
+const preserImg = (name) => {
+  var canvas = document.querySelector('canvas')
+  var a = document.createElement('a')
+  var url = canvas.toDataURL('image/png')
+  var event = new MouseEvent('click')
+  a.href = url
+  a.download = name || '二维码下载'
+  a.dispatchEvent(event)
+}
+
+export { generaCode, preserImg }

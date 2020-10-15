@@ -5,7 +5,7 @@
     </div>
     <h4>{{userName}}</h4>
     <button @click="addAmount">ADD</button>
-    <button @click="testName">Name</button>
+    <button @click="testName">二维码下载</button>
     <child :sendName="userName" :count="amount"/>
     <h5>{{amountNumber}}</h5>
     <div class="snake">Click</div>
@@ -15,7 +15,7 @@
 <script>
 // @ is an alias to /src
 import { mapGetters, mapState } from 'vuex'
-import generaCode from '../utils/generaCode'
+import { generaCode, preserImg } from '../utils/generaCode'
 import child from '@/components/child'
 
 export default {
@@ -107,6 +107,7 @@ export default {
     },
     testName () {
       this.$store.dispatch('changeName')
+      preserImg()
     }
   }
 }
