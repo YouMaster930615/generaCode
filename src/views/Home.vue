@@ -8,7 +8,7 @@
     <button @click="testName">二维码下载</button>
     <child :sendName="userName" :count="amount"/>
     <h5>{{amountNumber}}</h5>
-    <div class="snake">杯酒贺新凉</div>
+    <div class="snake">杯酒贺新凉11111</div>
   </div>
 </template>
 
