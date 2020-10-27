@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
-    <router-link to="/">主页</router-link> |
-    <router-link to="/about">副页</router-link>
+    <router-link to="/">主页<2222/router-link> |
+    <router-link to="/about">副页3333</router-link>
   </div>
   <router-view />
 </template>

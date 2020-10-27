@@ -4,7 +4,7 @@
       <span>{{item.price}}</span>
     </div>
     <h4>{{userName}}</h4>
-    <button @click="addAmount">林斗房</button>
+    <button @click="addAmount">驼背老人</button>
     <button @click="testName">二维码下载</button>
     <child :sendName="userName" :count="amount"/>
     <h5>{{amountNumber}}</h5>
