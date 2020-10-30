@@ -5,7 +5,7 @@
     </div>
     <h4>{{userName}}</h4>
     <button @click="addAmount">ADD</button>
-    <button @click="testName">二维码下载</button>
+    <button @click="testName">二维码下载111</button>
     <child :sendName="userName" :count="amount"/>
     <h5>{{amountNumber}}</h5>
     <div class="snake">Click</div>
@@ -103,7 +103,8 @@ export default {
   },
   methods: {
     addAmount () {
-      this.$store.dispatch('changeAmount', this.amount)
+      this.$store.dispatch('changeAmount', 156)
+      console.log(this.$store.amountNumber)
     },
     testName () {
       this.$store.dispatch('changeName')

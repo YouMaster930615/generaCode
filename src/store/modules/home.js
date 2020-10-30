@@ -1,4 +1,5 @@
 const home = {
+  name: 'home',
   state: {
     nameList: [
       {
